@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11352,6 +11352,11 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <wire x1="91.44" y1="162.56" x2="83.82" y2="162.56" width="0.1524" layer="91"/>
 <label x="83.82" y="162.56" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="OBDHT" gate="G$1" pin="DAT"/>
+<wire x1="317.5" y1="99.06" x2="317.5" y2="86.36" width="0.1524" layer="91"/>
+<label x="317.5" y="86.36" size="1.016" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="ONE_WIRE" class="0">
 <segment>
@@ -11430,12 +11435,6 @@ Also known as: &lt;b&gt;AM2302&lt;/b&gt;
 <pinref part="JP3" gate="A" pin="5"/>
 <wire x1="248.92" y1="76.2" x2="241.3" y2="76.2" width="0.1524" layer="91"/>
 <label x="241.3" y="76.2" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="OBDHT" gate="G$1" pin="DAT"/>
-<wire x1="317.5" y1="99.06" x2="317.5" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
