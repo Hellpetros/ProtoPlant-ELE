@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
@@ -166,6 +166,9 @@
 <text x="2.921" y="0.508" size="0.8128" layer="25">OW</text>
 <text x="2.921" y="30.988" size="0.8128" layer="25">OW</text>
 <text x="7.62" y="30.988" size="0.8128" layer="25">GND</text>
+<text x="2.159" y="15.748" size="1.778" layer="26" rot="MR270">PPSB-T v1.0</text>
+<text x="17.272" y="15.24" size="1.778" layer="26" rot="MR270">PROTOPlant</text>
+<text x="11.811" y="24.13" size="1.778" layer="26" rot="MR270">by Petr Stourac</text>
 </plain>
 <libraries>
 <library name="#PaJa_konektory">
