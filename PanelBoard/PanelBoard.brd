@@ -90,7 +90,7 @@
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyYzQ3NTBk" projecturn="a.cGVyc29uYWw6dWUyYzQ3NTBkIzIwMjAwMjE0MjY1NTk3Mjc2" f3durn="urn:adsk.wipprod:dm.lineage:b-HqdqnqQIujW4GbYgv2IA" pcbguid="b09f9af9-6d01-48f4-b537-68b3158d0bda" lastpulledtime="2020-04-18T11:30:07Z" lastsyncedchangeguid="e40187d6-1b40-b4d3-6492-74cde82d2f4a" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="e40187d6-1b40-b4d3-6492-74cde82d2f4a" lastpushedtime="2020-04-18T10:28:21Z" linktopcb3d="%12"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyYzQ3NTBk" projecturn="a.cGVyc29uYWw6dWUyYzQ3NTBkIzIwMjAwMjE0MjY1NTk3Mjc2" f3durn="urn:adsk.wipprod:dm.lineage:b-HqdqnqQIujW4GbYgv2IA" pcbguid="b09f9af9-6d01-48f4-b537-68b3158d0bda" lastpulledtime="2020-04-18T11:30:07Z" lastsyncedchangeguid="e40187d6-1b40-b4d3-6492-74cde82d2f4a" latestrevisionid="" lastsyncedrevisionid="" lastboardhashguid="5d1565bc-5885-4c87-dfc4-e1cb402c18c1" lastpushedtime="2020-04-18T12:57:09Z" linktopcb3d="%12"/>
 <plain>
 <text x="52.07" y="33.02" size="1.778" layer="26" rot="MR0">PROTOPlant PanelBoard</text>
 <text x="21.59" y="33.02" size="1.778" layer="26" rot="MR0">Petr Stourac 2020</text>
@@ -842,19 +842,19 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="20.32" y="5.715" size="1.27" layer="28" rot="MR180"/>
 </element>
 <element name="K1" library="#PaJa_konektory" package="ARK500/2" value="ARK500/2" x="48.26" y="13.97" smashed="yes" rot="MR270">
-<attribute name="NAME" x="46.038" y="12.855" size="1.4224" layer="26" rot="MR270"/>
+<attribute name="NAME" x="43.498" y="12.855" size="1.4224" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="51.59" y="18.6793" size="1.016" layer="28" rot="MR270"/>
 </element>
 <element name="K2" library="#PaJa_konektory" package="ARK500/2" value="ARK500/2" x="46.99" y="3.81" smashed="yes" rot="MR0">
-<attribute name="NAME" x="49.685" y="6.032" size="1.4224" layer="26" rot="MR0"/>
+<attribute name="NAME" x="44.351" y="8.191" size="1.4224" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="51.6993" y="0.48" size="1.016" layer="28" rot="MR0"/>
 </element>
 <element name="K3" library="#PaJa_konektory" package="ARK500/2" value="ARK500/2" x="36.83" y="3.81" smashed="yes" rot="MR0">
-<attribute name="NAME" x="36.985" y="6.032" size="1.4224" layer="26" rot="MR0"/>
+<attribute name="NAME" x="34.318" y="8.191" size="1.4224" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="41.5393" y="0.48" size="1.016" layer="28" rot="MR0"/>
 </element>
 <element name="K4" library="#PaJa_konektory" package="ARK500/2" value="ARK500/2" x="48.26" y="24.13" smashed="yes" rot="MR270">
-<attribute name="NAME" x="46.038" y="25.555" size="1.4224" layer="26" rot="MR270"/>
+<attribute name="NAME" x="43.498" y="21.745" size="1.4224" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="51.59" y="28.8393" size="1.016" layer="28" rot="MR270"/>
 </element>
 <element name="LCD" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="1X16" package3d_urn="urn:adsk.eagle:package:22432/2" value="" x="21.59" y="30.48" smashed="yes">
