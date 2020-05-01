@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4922,14 +4922,14 @@ paja@paja-trb.cz
 </class>
 </classes>
 <parts>
-<part name="U$1" library="diy-modules" deviceset="TEMP-HUM-SENSOR-DHT22" device="" value="DHT22"/>
+<part name="DHT22" library="diy-modules" deviceset="TEMP-HUM-SENSOR-DHT22" device="" value="DHT22"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5P-LOC" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
-<part name="K1" library="#PaJa_konektory" deviceset="ARK500/3" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="CON" library="#PaJa_konektory" deviceset="ARK500/3" device=""/>
+<part name="T_CON" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
@@ -4938,7 +4938,7 @@ paja@paja-trb.cz
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="73.66" y="132.08" smashed="yes" rot="R90">
+<instance part="DHT22" gate="G$1" x="73.66" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.42" y="124.46" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="60.96" y="124.46" size="1.778" layer="95" rot="R90"/>
 </instance>
@@ -4960,11 +4960,11 @@ paja@paja-trb.cz
 <attribute name="NAME" x="58.039" y="110.744" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="63.119" y="110.744" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="K1" gate="K" x="68.58" y="91.44" smashed="yes" rot="R90">
+<instance part="CON" gate="K" x="68.58" y="91.44" smashed="yes" rot="R90">
 <attribute name="VALUE" x="75.559" y="89.2525" size="1.778" layer="96" rot="R90"/>
 <attribute name="PART" x="63.505" y="89.569" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="JP1" gate="A" x="68.58" y="78.74" smashed="yes" rot="R90">
+<instance part="T_CON" gate="A" x="68.58" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="62.865" y="72.39" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="76.2" y="72.39" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -4980,7 +4980,7 @@ paja@paja-trb.cz
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="DHT22" gate="G$1" pin="GND"/>
 <wire x1="76.2" y1="119.38" x2="76.2" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
@@ -4990,8 +4990,8 @@ paja@paja-trb.cz
 <wire x1="55.88" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="K1" gate="K" pin="K3"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="CON" gate="K" pin="K3"/>
+<pinref part="T_CON" gate="A" pin="3"/>
 <wire x1="71.12" y1="86.36" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="76.2" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
 <junction x="71.12" y="76.2"/>
@@ -5001,13 +5001,13 @@ paja@paja-trb.cz
 </net>
 <net name="DATA_OUT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="DAT"/>
+<pinref part="DHT22" gate="G$1" pin="DAT"/>
 <wire x1="71.12" y1="119.38" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 <label x="71.12" y="109.22" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="K1" gate="K" pin="K2"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="CON" gate="K" pin="K2"/>
+<pinref part="T_CON" gate="A" pin="2"/>
 <wire x1="68.58" y1="86.36" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="76.2" x2="68.58" y2="66.04" width="0.1524" layer="91"/>
 <junction x="68.58" y="76.2"/>
@@ -5016,7 +5016,7 @@ paja@paja-trb.cz
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="DHT22" gate="G$1" pin="VDD"/>
 <wire x1="68.58" y1="119.38" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 <wire x1="68.58" y1="109.22" x2="68.58" y2="101.6" width="0.1524" layer="91"/>
@@ -5026,8 +5026,8 @@ paja@paja-trb.cz
 <junction x="68.58" y="109.22"/>
 </segment>
 <segment>
-<pinref part="K1" gate="K" pin="K1"/>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="CON" gate="K" pin="K1"/>
+<pinref part="T_CON" gate="A" pin="1"/>
 <wire x1="66.04" y1="86.36" x2="66.04" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="76.2" x2="66.04" y2="66.04" width="0.1524" layer="91"/>
 <junction x="66.04" y="76.2"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -841,15 +841,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="U1" library="SparkFun-Sensors" deviceset="DS18B20" device=""/>
+<part name="DS18B20" library="SparkFun-Sensors" deviceset="DS18B20" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IN" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
 <part name="OUT" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
-<part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
-<part name="JP2" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="IN_P" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
+<part name="OUT_P" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="DIR" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="NO_JP"/>
 </parts>
 <sheets>
@@ -862,7 +862,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="U1" gate="G$1" x="58.42" y="134.62" smashed="yes" rot="R90">
+<instance part="DS18B20" gate="G$1" x="58.42" y="134.62" smashed="yes" rot="R90">
 <attribute name="NAME" x="50.546" y="127" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="66.294" y="127" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
@@ -877,11 +877,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="139.701" y="135.2735" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="149.219" y="135.2735" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP1" gate="G$1" x="124.46" y="119.38" smashed="yes" rot="R90">
+<instance part="IN_P" gate="G$1" x="124.46" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="118.745" y="113.03" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="129.54" y="113.03" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP2" gate="G$1" x="144.78" y="119.38" smashed="yes" rot="R90">
+<instance part="OUT_P" gate="G$1" x="144.78" y="119.38" smashed="yes" rot="R90">
 <attribute name="NAME" x="139.065" y="113.03" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="149.86" y="113.03" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -891,7 +891,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND2" gate="1" x="132.08" y="104.14" smashed="yes" rot="R90">
 <attribute name="VALUE" x="134.62" y="101.6" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="JP3" gate="A" x="78.74" y="137.16" smashed="yes">
+<instance part="DIR" gate="A" x="78.74" y="137.16" smashed="yes">
 <attribute name="NAME" x="72.39" y="142.875" size="1.778" layer="95"/>
 <attribute name="VALUE" x="72.39" y="129.54" size="1.778" layer="96"/>
 </instance>
@@ -905,9 +905,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="3"/>
+<pinref part="DIR" gate="A" pin="3"/>
 <wire x1="63.5" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="DS18B20" gate="G$1" pin="GND"/>
 <wire x1="63.5" y1="124.46" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
 <junction x="63.5" y="124.46"/>
 <wire x1="63.5" y1="111.76" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
@@ -919,7 +919,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="OUT" gate="K" pin="K2"/>
-<pinref part="JP2" gate="G$1" pin="2"/>
+<pinref part="OUT_P" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="132.08" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="116.84" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
 <junction x="144.78" y="116.84"/>
@@ -928,7 +928,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="IN" gate="K" pin="K2"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="IN_P" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="132.08" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="116.84" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
 <junction x="124.46" y="116.84"/>
@@ -938,17 +938,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="ONEWIRE_BUS" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="DQ"/>
+<pinref part="DS18B20" gate="G$1" pin="DQ"/>
 <wire x1="58.42" y1="124.46" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
 <label x="58.42" y="111.76" size="1.016" layer="95" rot="R270" xref="yes"/>
 <wire x1="58.42" y1="124.46" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
 <junction x="58.42" y="124.46"/>
-<pinref part="JP3" gate="A" pin="2"/>
+<pinref part="DIR" gate="A" pin="2"/>
 <wire x1="58.42" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IN" gate="K" pin="K1"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="IN_P" gate="G$1" pin="1"/>
 <wire x1="121.92" y1="132.08" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="116.84" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
 <junction x="121.92" y="116.84"/>
@@ -956,7 +956,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="OUT" gate="K" pin="K1"/>
-<pinref part="JP2" gate="G$1" pin="1"/>
+<pinref part="OUT_P" gate="G$1" pin="1"/>
 <wire x1="142.24" y1="132.08" x2="142.24" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="116.84" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
 <junction x="142.24" y="116.84"/>
@@ -965,9 +965,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="JP3" gate="A" pin="1"/>
+<pinref part="DIR" gate="A" pin="1"/>
 <wire x1="53.34" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VDD"/>
+<pinref part="DS18B20" gate="G$1" pin="VDD"/>
 <wire x1="53.34" y1="124.46" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
