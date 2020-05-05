@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -158,137 +158,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="frames" urn="urn:adsk.eagle:library:229">
-<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="A4L-LOC" urn="urn:adsk.eagle:symbol:13874/1" library_version="1">
-<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
-<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
-<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
-<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
-<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
-<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
-<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="A4L-LOC" urn="urn:adsk.eagle:component:13926/1" prefix="FRAME" uservalue="yes" library_version="1">
-<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
-DIN A4, landscape with location and doc. field</description>
-<gates>
-<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="SparkFun-Sensors">
-<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
-This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
-&lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
-&lt;br&gt;
-&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
-&lt;br&gt;
-&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
-&lt;br&gt;
-&lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="TO-92-AMMO">
-<description>&lt;h3&gt;TO-92 3-Pin PTH AMMO package&lt;/h3&gt;
-&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pin Count: 3&lt;/li&gt;
-&lt;li&gt;Dimensions:  3.68 x 4.83 x 4.83 mm&lt;/li&gt;
-&lt;li&gt;Pitch: 2.54 mm&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Devices Using:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;DS18B20&lt;/li&gt;
-&lt;/ul&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.2032" layer="21" curve="-111.098957" cap="flat"/>
-<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.2032" layer="21" curve="-111.09954" cap="flat"/>
-<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.2032" layer="21" curve="-25.057615"/>
-<wire x1="0.635" y1="2.54" x2="1.905" y2="1.905" width="0.2032" layer="21" curve="-28.072487"/>
-<wire x1="-1.905" y1="1.905" x2="0.635" y2="2.54" width="0.2032" layer="21" curve="-53.130102"/>
-<pad name="3" x="2.54" y="0" drill="0.8128" diameter="1.8796"/>
-<pad name="2" x="0" y="0" drill="0.8128" diameter="1.8796"/>
-<pad name="1" x="-2.54" y="0" drill="0.8128" diameter="1.8796"/>
-<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center">&gt;NAME</text>
-<text x="0" y="2.794" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="DS18B20">
-<description>&lt;h3&gt;Dallas/Maxim DS18B20 1-Wire Temperature Sensor&lt;/h3&gt;
-&lt;p&gt;The DS18B20 reports degrees C with 9 to 12-bit precision, -55C to 125C (+/-0.5C). Each sensor has a unique 64-Bit Serial number etched into it - allows for a huge number of sensors to be used on one data bus.&lt;/p&gt;</description>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="DQ" x="-10.16" y="0" length="short"/>
-<pin name="VDD" x="-10.16" y="5.08" length="short" direction="pwr"/>
-<pin name="GND" x="-10.16" y="-5.08" length="short" direction="pwr"/>
-<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="DS18B20" prefix="U">
-<description>&lt;h3&gt;Dallas/Maxim DS18B20 1-Wire Temperature Sensor&lt;/h3&gt;
-&lt;p&gt;The DS18B20 reports degrees C with 9 to 12-bit precision, -55C to 125C (+/-0.5C). Each sensor has a unique 64-Bit Serial number etched into it - allows for a huge number of sensors to be used on one data bus.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;SparkFun Products&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/245"&gt;One Wire Digital Temperature Sensor - DS18B20&lt;/a&gt; (SEN-00245)&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="DS18B20" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO-92-AMMO">
-<connects>
-<connect gate="G$1" pin="DQ" pad="2"/>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="STORE_ID" value="SEN-00245" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -314,99 +183,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="#PaJa_konektory">
-<description>&lt;B&gt;PaJa_konektory&lt;/B&gt; - knihovna   &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 
-&lt;I&gt;(vytvoreno 1.1.2014)&lt;/I&gt;&lt;BR&gt;
-Knihovna konektoru do Eagle &lt;I&gt;(od verze 5.6)&lt;/I&gt;&lt;BR&gt;
-&lt;BR&gt;
-Knihovna obsahuje: 98 soucastek na DPS, 98 do SCHematu&lt;BR&gt;
-&lt;BR&gt;
-&lt;Author&gt;Copyright (C) PaJa 2011-2014&lt;BR&gt;
-www.paja-trb.cz&lt;BR&gt;
-paja@paja-trb.cz
-&lt;/author&gt;</description>
-<packages>
-<package name="ARK500/2">
-<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="5.08" y2="3.088" width="0.127" layer="21"/>
-<wire x1="5.08" y1="2.199" x2="5.08" y2="2.159" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.127" layer="21"/>
-<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.127" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.127" layer="51"/>
-<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
-<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
-<wire x1="5.08" y1="2.199" x2="5.588" y2="2.072" width="0.127" layer="21"/>
-<wire x1="5.588" y1="2.072" x2="5.588" y2="3.215" width="0.127" layer="21"/>
-<wire x1="5.588" y1="3.215" x2="5.08" y2="3.088" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.088" x2="5.08" y2="2.199" width="0.127" layer="21"/>
-<circle x="2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
-<circle x="-2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
-<circle x="2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
-<circle x="-2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
-<circle x="2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
-<circle x="-2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
-<text x="-2.695" y="-5.398" size="1.4224" layer="25">&gt;NAME</text>
-<text x="-4.7093" y="-3.33" size="1.016" layer="27">&gt;VALUE</text>
-<text x="-4.127" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
-<text x="0.794" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
-<text x="-0.477" y="2.2866" size="0.254" layer="100">PaJa</text>
-<text x="2.0377" y="-3.4199" size="0.6096" layer="101">dratu</text>
-<text x="1.7395" y="-2.7752" size="0.6096" layer="101">strana</text>
-<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ARK500/2">
-<wire x1="-1.268" y1="1.906" x2="-1.268" y2="-4.446" width="0.254" layer="94"/>
-<wire x1="-1.268" y1="-4.446" x2="3.178" y2="-4.446" width="0.254" layer="94"/>
-<wire x1="3.178" y1="-4.446" x2="3.178" y2="1.906" width="0.254" layer="94"/>
-<wire x1="3.178" y1="1.906" x2="-1.268" y2="1.906" width="0.254" layer="94"/>
-<wire x1="-0.317" y1="-1.268" x2="2.219" y2="1.268" width="0.127" layer="94"/>
-<wire x1="-0.317" y1="-3.804" x2="2.219" y2="-1.268" width="0.127" layer="94"/>
-<circle x="0.951" y="0" radius="0.951" width="0.254" layer="94"/>
-<circle x="0.951" y="-2.536" radius="0.951" width="0.254" layer="94"/>
-<text x="-1.8865" y="2.539" size="1.778" layer="95">&gt;Name</text>
-<text x="-1.8865" y="-6.979" size="1.778" layer="96">&gt;Value</text>
-<text x="1.897" y="-4.1245" size="0.254" layer="100">PaJa</text>
-<pin name="K1" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="K2" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ARK500/2" prefix="K">
-<description>&lt;B&gt;Svorkovnice&lt;/B&gt; - roztec 5mm - dvojita</description>
-<gates>
-<gate name="K" symbol="ARK500/2" x="-40.64" y="35.56" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="ARK500/2">
-<connects>
-<connect gate="K" pin="K1" pad="1"/>
-<connect gate="K" pin="K2" pad="2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -830,6 +606,261 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="frames" urn="urn:adsk.eagle:library:229">
+<description>&lt;b&gt;Frames for Sheet and Layout&lt;/b&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="A5P-LOC" urn="urn:adsk.eagle:symbol:13880/1" library_version="1">
+<wire x1="127" y1="3.937" x2="127" y2="9.017" width="0.1016" layer="94"/>
+<wire x1="127" y1="9.017" x2="127" y2="14.097" width="0.1016" layer="94"/>
+<wire x1="127" y1="14.097" x2="127" y2="19.177" width="0.1016" layer="94"/>
+<wire x1="127" y1="19.177" x2="127" y2="24.257" width="0.1016" layer="94"/>
+<wire x1="31.75" y1="3.937" x2="31.75" y2="24.257" width="0.1016" layer="94"/>
+<wire x1="31.75" y1="24.257" x2="85.725" y2="24.257" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="24.257" x2="127" y2="24.257" width="0.1016" layer="94"/>
+<wire x1="116.84" y1="3.937" x2="116.84" y2="9.017" width="0.1016" layer="94"/>
+<wire x1="116.84" y1="9.017" x2="127" y2="9.017" width="0.1016" layer="94"/>
+<wire x1="116.84" y1="9.017" x2="85.725" y2="9.017" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="9.017" x2="85.725" y2="3.937" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="9.017" x2="85.725" y2="14.097" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="14.097" x2="127" y2="14.097" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="14.097" x2="85.725" y2="19.177" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="19.177" x2="127" y2="19.177" width="0.1016" layer="94"/>
+<wire x1="85.725" y1="19.177" x2="85.725" y2="24.257" width="0.1016" layer="94"/>
+<text x="87.63" y="15.367" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="87.63" y="10.287" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="100.965" y="5.207" size="2.54" layer="94">&gt;SHEET</text>
+<text x="87.376" y="5.08" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="130.81" y2="179.07" columns="4" rows="4" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="A5P-LOC" urn="urn:adsk.eagle:component:13935/1" prefix="FRAME" uservalue="yes" library_version="1">
+<description>A5P LOC</description>
+<gates>
+<gate name="G$1" symbol="A5P-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="#PaJa_konektory" urn="urn:adsk.eagle:library:19754563">
+<description>&lt;B&gt;PaJa_konektory&lt;/B&gt; - knihovna   &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 
+&lt;I&gt;(vytvoreno 1.1.2014)&lt;/I&gt;&lt;BR&gt;
+Knihovna konektoru do Eagle &lt;I&gt;(od verze 5.6)&lt;/I&gt;&lt;BR&gt;
+&lt;BR&gt;
+Knihovna obsahuje: 98 soucastek na DPS, 98 do SCHematu&lt;BR&gt;
+&lt;BR&gt;
+&lt;Author&gt;Copyright (C) PaJa 2011-2014&lt;BR&gt;
+www.paja-trb.cz&lt;BR&gt;
+paja@paja-trb.cz
+&lt;/author&gt;</description>
+<packages>
+<package name="ARK500/2" urn="urn:adsk.eagle:footprint:19754486/1" library_version="2">
+<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="5.08" y2="3.088" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.199" x2="5.08" y2="2.159" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.127" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.127" layer="51"/>
+<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
+<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
+<wire x1="5.08" y1="2.199" x2="5.588" y2="2.072" width="0.127" layer="21"/>
+<wire x1="5.588" y1="2.072" x2="5.588" y2="3.215" width="0.127" layer="21"/>
+<wire x1="5.588" y1="3.215" x2="5.08" y2="3.088" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.088" x2="5.08" y2="2.199" width="0.127" layer="21"/>
+<circle x="2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
+<circle x="-2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
+<circle x="2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
+<circle x="-2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
+<circle x="-2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
+<text x="-2.695" y="-5.398" size="1.4224" layer="25">&gt;NAME</text>
+<text x="-4.7093" y="-3.33" size="1.016" layer="27">&gt;VALUE</text>
+<text x="-4.127" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0.794" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
+<text x="-0.477" y="2.2866" size="0.254" layer="100">PaJa</text>
+<text x="2.0377" y="-3.4199" size="0.6096" layer="101">dratu</text>
+<text x="1.7395" y="-2.7752" size="0.6096" layer="101">strana</text>
+<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="ARK500/2" urn="urn:adsk.eagle:package:19754484/4" type="model" library_version="2">
+<packageinstances>
+<packageinstance name="ARK500/2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ARK500/2" urn="urn:adsk.eagle:symbol:19754593/1" library_version="2">
+<wire x1="-1.268" y1="1.906" x2="-1.268" y2="-4.446" width="0.254" layer="94"/>
+<wire x1="-1.268" y1="-4.446" x2="3.178" y2="-4.446" width="0.254" layer="94"/>
+<wire x1="3.178" y1="-4.446" x2="3.178" y2="1.906" width="0.254" layer="94"/>
+<wire x1="3.178" y1="1.906" x2="-1.268" y2="1.906" width="0.254" layer="94"/>
+<wire x1="-0.317" y1="-1.268" x2="2.219" y2="1.268" width="0.127" layer="94"/>
+<wire x1="-0.317" y1="-3.804" x2="2.219" y2="-1.268" width="0.127" layer="94"/>
+<circle x="0.951" y="0" radius="0.951" width="0.254" layer="94"/>
+<circle x="0.951" y="-2.536" radius="0.951" width="0.254" layer="94"/>
+<text x="-1.8865" y="2.539" size="1.778" layer="95">&gt;Name</text>
+<text x="-1.8865" y="-6.979" size="1.778" layer="96">&gt;Value</text>
+<text x="1.897" y="-4.1245" size="0.254" layer="100">PaJa</text>
+<pin name="K1" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="K2" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARK500/2" urn="urn:adsk.eagle:component:19754822/2" prefix="K" library_version="2">
+<description>&lt;B&gt;Svorkovnice&lt;/B&gt; - roztec 5mm - dvojita</description>
+<gates>
+<gate name="K" symbol="ARK500/2" x="-40.64" y="35.56" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="ARK500/2">
+<connects>
+<connect gate="K" pin="K1" pad="1"/>
+<connect gate="K" pin="K2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19754484/4"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Sensors" urn="urn:adsk.eagle:library:19754888">
+<description>&lt;h3&gt;SparkFun Sensors&lt;/h3&gt;
+This library contains sensors- accelerometers, gyros, compasses, magnetometers, light sensors, imagers, temp sensors, etc.
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application.
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="TO-92-AMMO" urn="urn:adsk.eagle:footprint:19755038/1" library_version="2">
+<description>&lt;h3&gt;TO-92 3-Pin PTH AMMO package&lt;/h3&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 3&lt;/li&gt;
+&lt;li&gt;Dimensions:  3.68 x 4.83 x 4.83 mm&lt;/li&gt;
+&lt;li&gt;Pitch: 2.54 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DS18B20&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.2032" layer="21" curve="-111.098957" cap="flat"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.2032" layer="21" curve="-111.09954" cap="flat"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.2032" layer="21" curve="-25.057615"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="1.905" width="0.2032" layer="21" curve="-28.072487"/>
+<wire x1="-1.905" y1="1.905" x2="0.635" y2="2.54" width="0.2032" layer="21" curve="-53.130102"/>
+<pad name="3" x="2.54" y="0" drill="0.8128" diameter="1.8796"/>
+<pad name="2" x="0" y="0" drill="0.8128" diameter="1.8796"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" diameter="1.8796"/>
+<text x="0" y="-1.778" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center">&gt;NAME</text>
+<text x="0" y="2.794" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="TO-92-AMMO" urn="urn:adsk.eagle:package:19755131/2" type="model" library_version="2">
+<description>&lt;h3&gt;TO-92 3-Pin PTH AMMO package&lt;/h3&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 3&lt;/li&gt;
+&lt;li&gt;Dimensions:  3.68 x 4.83 x 4.83 mm&lt;/li&gt;
+&lt;li&gt;Pitch: 2.54 mm&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Devices Using:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DS18B20&lt;/li&gt;
+&lt;/ul&gt;</description>
+<packageinstances>
+<packageinstance name="TO-92-AMMO"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="DS18B20" urn="urn:adsk.eagle:symbol:19754944/1" library_version="2">
+<description>&lt;h3&gt;Dallas/Maxim DS18B20 1-Wire Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The DS18B20 reports degrees C with 9 to 12-bit precision, -55C to 125C (+/-0.5C). Each sensor has a unique 64-Bit Serial number etched into it - allows for a huge number of sensors to be used on one data bus.&lt;/p&gt;</description>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="DQ" x="-10.16" y="0" length="short"/>
+<pin name="VDD" x="-10.16" y="5.08" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short" direction="pwr"/>
+<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DS18B20" urn="urn:adsk.eagle:component:19755224/2" prefix="U" library_version="2">
+<description>&lt;h3&gt;Dallas/Maxim DS18B20 1-Wire Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The DS18B20 reports degrees C with 9 to 12-bit precision, -55C to 125C (+/-0.5C). Each sensor has a unique 64-Bit Serial number etched into it - allows for a huge number of sensors to be used on one data bus.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/245"&gt;One Wire Digital Temperature Sensor - DS18B20&lt;/a&gt; (SEN-00245)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="DS18B20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO-92-AMMO">
+<connects>
+<connect gate="G$1" pin="DQ" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19755131/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="STORE_ID" value="SEN-00245" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -840,64 +871,68 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <parts>
-<part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="DS18B20" library="SparkFun-Sensors" deviceset="DS18B20" device=""/>
+<part name="DS18B20" library="SparkFun-Sensors" library_urn="urn:adsk.eagle:library:19754888" deviceset="DS18B20" device="" package3d_urn="urn:adsk.eagle:package:19755131/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="IN" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
-<part name="OUT" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
+<part name="IN" library="#PaJa_konektory" library_urn="urn:adsk.eagle:library:19754563" deviceset="ARK500/2" device="" package3d_urn="urn:adsk.eagle:package:19754484/4"/>
+<part name="OUT" library="#PaJa_konektory" library_urn="urn:adsk.eagle:library:19754563" deviceset="ARK500/2" device="" package3d_urn="urn:adsk.eagle:package:19754484/4"/>
 <part name="IN_P" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="OUT_P" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X2" device="" package3d_urn="urn:adsk.eagle:package:22435/2"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="DIR" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="JP4" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="NO_JP"/>
+<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5P-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
+<text x="7.62" y="165.1" size="6.4516" layer="94">PPSB-TH sensorics board</text>
+<text x="7.62" y="154.94" size="1.9304" layer="94">Created by Petr Stourac, sourced under CC BY-NC-SA v3.0 licence
+Distributed "AS IS" without warranty of any kind, espress or implied, 
+including but not limited to the warranties of merchantability or noninfringement.</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
+<instance part="DS18B20" gate="G$1" x="30.48" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.606" y="86.36" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="38.354" y="86.36" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="DS18B20" gate="G$1" x="58.42" y="134.62" smashed="yes" rot="R90">
-<attribute name="NAME" x="50.546" y="127" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="66.294" y="127" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<instance part="GND1" gate="1" x="35.56" y="68.58" smashed="yes">
+<attribute name="VALUE" x="33.02" y="66.04" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="63.5" y="109.22" smashed="yes">
-<attribute name="VALUE" x="60.96" y="106.68" size="1.778" layer="96"/>
+<instance part="IN" gate="K" x="78.74" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="76.201" y="97.1735" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="85.719" y="97.1735" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IN" gate="K" x="121.92" y="137.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="119.381" y="135.2735" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="128.899" y="135.2735" size="1.778" layer="96" rot="R90"/>
+<instance part="OUT" gate="K" x="99.06" y="99.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="96.521" y="97.1735" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="106.039" y="97.1735" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="OUT" gate="K" x="142.24" y="137.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="139.701" y="135.2735" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="149.219" y="135.2735" size="1.778" layer="96" rot="R90"/>
+<instance part="IN_P" gate="G$1" x="81.28" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="75.565" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="86.36" y="74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="IN_P" gate="G$1" x="124.46" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="118.745" y="113.03" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="129.54" y="113.03" size="1.778" layer="96" rot="R90"/>
+<instance part="OUT_P" gate="G$1" x="101.6" y="81.28" smashed="yes" rot="R90">
+<attribute name="NAME" x="95.885" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="106.68" y="74.93" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="OUT_P" gate="G$1" x="144.78" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="139.065" y="113.03" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="149.86" y="113.03" size="1.778" layer="96" rot="R90"/>
+<instance part="GND3" gate="1" x="109.22" y="66.04" smashed="yes" rot="R90">
+<attribute name="VALUE" x="111.76" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND3" gate="1" x="152.4" y="104.14" smashed="yes" rot="R90">
-<attribute name="VALUE" x="154.94" y="101.6" size="1.778" layer="96" rot="R90"/>
+<instance part="GND2" gate="1" x="88.9" y="66.04" smashed="yes" rot="R90">
+<attribute name="VALUE" x="91.44" y="63.5" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND2" gate="1" x="132.08" y="104.14" smashed="yes" rot="R90">
-<attribute name="VALUE" x="134.62" y="101.6" size="1.778" layer="96" rot="R90"/>
+<instance part="DIR" gate="A" x="50.8" y="96.52" smashed="yes">
+<attribute name="NAME" x="44.45" y="102.235" size="1.778" layer="95"/>
+<attribute name="VALUE" x="44.45" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="DIR" gate="A" x="78.74" y="137.16" smashed="yes">
-<attribute name="NAME" x="72.39" y="142.875" size="1.778" layer="95"/>
-<attribute name="VALUE" x="72.39" y="129.54" size="1.778" layer="96"/>
+<instance part="JP4" gate="G$1" x="17.78" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="15.24" y="76.2" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="20.32" y="76.2" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="JP4" gate="G$1" x="43.18" y="119.38" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.64" y="116.84" size="1.778" layer="95" font="vector" rot="R90"/>
-<attribute name="VALUE" x="45.72" y="116.84" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
+<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="87.63" y="15.367" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="87.63" y="10.287" size="2.286" layer="94"/>
+<attribute name="SHEET" x="100.965" y="5.207" size="2.54" layer="94"/>
 </instance>
 </instances>
 <busses>
@@ -906,72 +941,72 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="GND" class="0">
 <segment>
 <pinref part="DIR" gate="A" pin="3"/>
-<wire x1="63.5" y1="134.62" x2="76.2" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="93.98" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="DS18B20" gate="G$1" pin="GND"/>
-<wire x1="63.5" y1="124.46" x2="63.5" y2="134.62" width="0.1524" layer="91"/>
-<junction x="63.5" y="124.46"/>
-<wire x1="63.5" y1="111.76" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="83.82" x2="35.56" y2="93.98" width="0.1524" layer="91"/>
+<junction x="35.56" y="83.82"/>
+<wire x1="35.56" y1="71.12" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="JP4" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="114.3" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
-<junction x="63.5" y="114.3"/>
+<wire x1="35.56" y1="73.66" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
+<junction x="35.56" y="73.66"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="K" pin="K2"/>
 <pinref part="OUT_P" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="132.08" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="116.84" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
-<junction x="144.78" y="116.84"/>
+<wire x1="101.6" y1="93.98" x2="101.6" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="78.74" x2="101.6" y2="66.04" width="0.1524" layer="91"/>
+<junction x="101.6" y="78.74"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="144.78" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="66.04" x2="106.68" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IN" gate="K" pin="K2"/>
 <pinref part="IN_P" gate="G$1" pin="2"/>
-<wire x1="124.46" y1="132.08" x2="124.46" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="116.84" x2="124.46" y2="104.14" width="0.1524" layer="91"/>
-<junction x="124.46" y="116.84"/>
-<wire x1="124.46" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="93.98" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="78.74" x2="81.28" y2="66.04" width="0.1524" layer="91"/>
+<junction x="81.28" y="78.74"/>
+<wire x1="81.28" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="ONEWIRE_BUS" class="0">
 <segment>
 <pinref part="DS18B20" gate="G$1" pin="DQ"/>
-<wire x1="58.42" y1="124.46" x2="58.42" y2="111.76" width="0.1524" layer="91"/>
-<label x="58.42" y="111.76" size="1.016" layer="95" rot="R270" xref="yes"/>
-<wire x1="58.42" y1="124.46" x2="58.42" y2="137.16" width="0.1524" layer="91"/>
-<junction x="58.42" y="124.46"/>
+<wire x1="30.48" y1="83.82" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
+<label x="30.48" y="71.12" size="1.016" layer="95" rot="R270" xref="yes"/>
+<wire x1="30.48" y1="83.82" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
+<junction x="30.48" y="83.82"/>
 <pinref part="DIR" gate="A" pin="2"/>
-<wire x1="58.42" y1="137.16" x2="76.2" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="96.52" x2="48.26" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IN" gate="K" pin="K1"/>
 <pinref part="IN_P" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="132.08" x2="121.92" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="116.84" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
-<junction x="121.92" y="116.84"/>
-<label x="121.92" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
+<wire x1="78.74" y1="93.98" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="78.74" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
+<junction x="78.74" y="78.74"/>
+<label x="78.74" y="66.04" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="OUT" gate="K" pin="K1"/>
 <pinref part="OUT_P" gate="G$1" pin="1"/>
-<wire x1="142.24" y1="132.08" x2="142.24" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="116.84" x2="142.24" y2="104.14" width="0.1524" layer="91"/>
-<junction x="142.24" y="116.84"/>
-<label x="142.24" y="104.14" size="1.016" layer="95" rot="R270" xref="yes"/>
+<wire x1="99.06" y1="93.98" x2="99.06" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="78.74" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
+<junction x="99.06" y="78.74"/>
+<label x="99.06" y="66.04" size="1.016" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="DIR" gate="A" pin="1"/>
-<wire x1="53.34" y1="139.7" x2="76.2" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="99.06" x2="48.26" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="DS18B20" gate="G$1" pin="VDD"/>
-<wire x1="53.34" y1="124.46" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="83.82" x2="25.4" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
-<junction x="53.34" y="124.46"/>
+<wire x1="25.4" y1="83.82" x2="17.78" y2="83.82" width="0.1524" layer="91"/>
+<junction x="25.4" y="83.82"/>
 </segment>
 </net>
 </nets>
@@ -980,6 +1015,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

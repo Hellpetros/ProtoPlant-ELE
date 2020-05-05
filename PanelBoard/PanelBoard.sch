@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -124,99 +124,6 @@
 </gates>
 <devices>
 <device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="#PaJa_konektory">
-<description>&lt;B&gt;PaJa_konektory&lt;/B&gt; - knihovna   &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 
-&lt;I&gt;(vytvoreno 1.1.2014)&lt;/I&gt;&lt;BR&gt;
-Knihovna konektoru do Eagle &lt;I&gt;(od verze 5.6)&lt;/I&gt;&lt;BR&gt;
-&lt;BR&gt;
-Knihovna obsahuje: 98 soucastek na DPS, 98 do SCHematu&lt;BR&gt;
-&lt;BR&gt;
-&lt;Author&gt;Copyright (C) PaJa 2011-2014&lt;BR&gt;
-www.paja-trb.cz&lt;BR&gt;
-paja@paja-trb.cz
-&lt;/author&gt;</description>
-<packages>
-<package name="ARK500/2">
-<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.937" x2="5.08" y2="3.088" width="0.127" layer="21"/>
-<wire x1="5.08" y1="2.199" x2="5.08" y2="2.159" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.127" layer="21"/>
-<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
-<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.127" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.127" layer="51"/>
-<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
-<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
-<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
-<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.127" layer="51"/>
-<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
-<wire x1="5.08" y1="2.199" x2="5.588" y2="2.072" width="0.127" layer="21"/>
-<wire x1="5.588" y1="2.072" x2="5.588" y2="3.215" width="0.127" layer="21"/>
-<wire x1="5.588" y1="3.215" x2="5.08" y2="3.088" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.088" x2="5.08" y2="2.199" width="0.127" layer="21"/>
-<circle x="2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
-<circle x="-2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
-<circle x="2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
-<circle x="-2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
-<circle x="2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
-<circle x="-2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
-<text x="-2.695" y="-5.398" size="1.4224" layer="25">&gt;NAME</text>
-<text x="-4.7093" y="-3.33" size="1.016" layer="27">&gt;VALUE</text>
-<text x="-4.127" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
-<text x="0.794" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
-<text x="-0.477" y="2.2866" size="0.254" layer="100">PaJa</text>
-<text x="2.0377" y="-3.4199" size="0.6096" layer="101">dratu</text>
-<text x="1.7395" y="-2.7752" size="0.6096" layer="101">strana</text>
-<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ARK500/2">
-<wire x1="-1.268" y1="1.906" x2="-1.268" y2="-4.446" width="0.254" layer="94"/>
-<wire x1="-1.268" y1="-4.446" x2="3.178" y2="-4.446" width="0.254" layer="94"/>
-<wire x1="3.178" y1="-4.446" x2="3.178" y2="1.906" width="0.254" layer="94"/>
-<wire x1="3.178" y1="1.906" x2="-1.268" y2="1.906" width="0.254" layer="94"/>
-<wire x1="-0.317" y1="-1.268" x2="2.219" y2="1.268" width="0.127" layer="94"/>
-<wire x1="-0.317" y1="-3.804" x2="2.219" y2="-1.268" width="0.127" layer="94"/>
-<circle x="0.951" y="0" radius="0.951" width="0.254" layer="94"/>
-<circle x="0.951" y="-2.536" radius="0.951" width="0.254" layer="94"/>
-<text x="-1.8865" y="2.539" size="1.778" layer="95">&gt;Name</text>
-<text x="-1.8865" y="-6.979" size="1.778" layer="96">&gt;Value</text>
-<text x="1.897" y="-4.1245" size="0.254" layer="100">PaJa</text>
-<pin name="K1" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="K2" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ARK500/2" prefix="K">
-<description>&lt;B&gt;Svorkovnice&lt;/B&gt; - roztec 5mm - dvojita</description>
-<gates>
-<gate name="K" symbol="ARK500/2" x="-40.64" y="35.56" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="ARK500/2">
-<connects>
-<connect gate="K" pin="K1" pad="1"/>
-<connect gate="K" pin="K2" pad="2"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1349,6 +1256,109 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </deviceset>
 </devicesets>
 </library>
+<library name="#PaJa_konektory" urn="urn:adsk.eagle:library:19754563">
+<description>&lt;B&gt;PaJa_konektory&lt;/B&gt; - knihovna   &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 
+&lt;I&gt;(vytvoreno 1.1.2014)&lt;/I&gt;&lt;BR&gt;
+Knihovna konektoru do Eagle &lt;I&gt;(od verze 5.6)&lt;/I&gt;&lt;BR&gt;
+&lt;BR&gt;
+Knihovna obsahuje: 98 soucastek na DPS, 98 do SCHematu&lt;BR&gt;
+&lt;BR&gt;
+&lt;Author&gt;Copyright (C) PaJa 2011-2014&lt;BR&gt;
+www.paja-trb.cz&lt;BR&gt;
+paja@paja-trb.cz
+&lt;/author&gt;</description>
+<packages>
+<package name="ARK500/2" urn="urn:adsk.eagle:footprint:19754486/1" library_version="3">
+<wire x1="-5.08" y1="-3.556" x2="-5.08" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.937" x2="5.08" y2="3.088" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.199" x2="5.08" y2="2.159" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.556" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="-5.08" y2="3.937" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.159" x2="5.08" y2="2.159" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="5.08" y2="-2.159" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-2.159" x2="-5.08" y2="2.159" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-2.159" x2="5.08" y2="-3.556" width="0.127" layer="21"/>
+<wire x1="1.4986" y1="-1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="3.5306" y2="1.397" width="0.127" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-1.4986" y2="1.397" width="0.127" layer="51"/>
+<wire x1="-3.5306" y1="-1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
+<wire x1="1.4986" y1="-1.016" x2="3.5306" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="-3.5306" y1="-1.016" x2="-1.4986" y2="1.016" width="0.6096" layer="51"/>
+<wire x1="1.1176" y1="-1.016" x2="1.4986" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="3.5306" y1="1.397" x2="3.9116" y2="1.016" width="0.127" layer="51"/>
+<wire x1="-3.9116" y1="-1.016" x2="-3.5306" y2="-1.397" width="0.127" layer="51"/>
+<wire x1="-1.4986" y1="1.397" x2="-1.1176" y2="1.016" width="0.127" layer="51"/>
+<wire x1="5.08" y1="2.199" x2="5.588" y2="2.072" width="0.127" layer="21"/>
+<wire x1="5.588" y1="2.072" x2="5.588" y2="3.215" width="0.127" layer="21"/>
+<wire x1="5.588" y1="3.215" x2="5.08" y2="3.088" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.088" x2="5.08" y2="2.199" width="0.127" layer="21"/>
+<circle x="2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
+<circle x="-2.5146" y="3.048" radius="0.508" width="0.127" layer="21"/>
+<circle x="2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
+<circle x="-2.5146" y="0" radius="1.778" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
+<circle x="-2.54" y="0" radius="0.5724" width="0.127" layer="102"/>
+<pad name="1" x="-2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="1" diameter="3.2" shape="octagon"/>
+<text x="-2.695" y="-5.398" size="1.4224" layer="25">&gt;NAME</text>
+<text x="-4.7093" y="-3.33" size="1.016" layer="27">&gt;VALUE</text>
+<text x="-4.127" y="2.54" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0.794" y="2.54" size="0.9906" layer="21" ratio="12">2</text>
+<text x="-0.477" y="2.2866" size="0.254" layer="100">PaJa</text>
+<text x="2.0377" y="-3.4199" size="0.6096" layer="101">dratu</text>
+<text x="1.7395" y="-2.7752" size="0.6096" layer="101">strana</text>
+<rectangle x1="-0.381" y1="-1.905" x2="0.381" y2="1.905" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="ARK500/2" urn="urn:adsk.eagle:package:19754484/4" type="model" library_version="3">
+<packageinstances>
+<packageinstance name="ARK500/2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ARK500/2" urn="urn:adsk.eagle:symbol:19754593/1" library_version="3">
+<wire x1="-1.268" y1="1.906" x2="-1.268" y2="-4.446" width="0.254" layer="94"/>
+<wire x1="-1.268" y1="-4.446" x2="3.178" y2="-4.446" width="0.254" layer="94"/>
+<wire x1="3.178" y1="-4.446" x2="3.178" y2="1.906" width="0.254" layer="94"/>
+<wire x1="3.178" y1="1.906" x2="-1.268" y2="1.906" width="0.254" layer="94"/>
+<wire x1="-0.317" y1="-1.268" x2="2.219" y2="1.268" width="0.127" layer="94"/>
+<wire x1="-0.317" y1="-3.804" x2="2.219" y2="-1.268" width="0.127" layer="94"/>
+<circle x="0.951" y="0" radius="0.951" width="0.254" layer="94"/>
+<circle x="0.951" y="-2.536" radius="0.951" width="0.254" layer="94"/>
+<text x="-1.8865" y="2.539" size="1.778" layer="95">&gt;Name</text>
+<text x="-1.8865" y="-6.979" size="1.778" layer="96">&gt;Value</text>
+<text x="1.897" y="-4.1245" size="0.254" layer="100">PaJa</text>
+<pin name="K1" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="K2" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ARK500/2" urn="urn:adsk.eagle:component:19754822/2" prefix="K" library_version="3">
+<description>&lt;B&gt;Svorkovnice&lt;/B&gt; - roztec 5mm - dvojita</description>
+<gates>
+<gate name="K" symbol="ARK500/2" x="-40.64" y="35.56" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="ARK500/2">
+<connects>
+<connect gate="K" pin="K1" pad="1"/>
+<connect gate="K" pin="K2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:19754484/4"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1360,10 +1370,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </classes>
 <parts>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A5L-LOC" device=""/>
-<part name="K1" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
-<part name="K2" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
-<part name="K3" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
-<part name="K4" library="#PaJa_konektory" deviceset="ARK500/2" device=""/>
+<part name="K1" library="#PaJa_konektory" library_urn="urn:adsk.eagle:library:19754563" deviceset="ARK500/2" device="" package3d_urn="urn:adsk.eagle:package:19754484/4"/>
+<part name="K2" library="#PaJa_konektory" library_urn="urn:adsk.eagle:library:19754563" deviceset="ARK500/2" device="" package3d_urn="urn:adsk.eagle:package:19754484/4"/>
+<part name="K3" library="#PaJa_konektory" library_urn="urn:adsk.eagle:library:19754563" deviceset="ARK500/2" device="" package3d_urn="urn:adsk.eagle:package:19754484/4"/>
+<part name="K4" library="#PaJa_konektory" library_urn="urn:adsk.eagle:library:19754563" deviceset="ARK500/2" device="" package3d_urn="urn:adsk.eagle:package:19754484/4"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X4" device="/90" package3d_urn="urn:adsk.eagle:package:22465/2"/>
 <part name="PANCON" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="/90" package3d_urn="urn:adsk.eagle:package:22479/2"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -1380,6 +1390,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <sheets>
 <sheet>
 <plain>
+<text x="7.62" y="119.38" size="6.4516" layer="94">PROTOPlant PanelBoard</text>
+<text x="7.62" y="109.22" size="1.9304" layer="94">Created by Petr Stourac, sourced under CC BY-NC-SA v3.0 licence
+Distributed "AS IS" without warranty of any kind, espress or implied, 
+including but not limited to the warranties of merchantability or noninfringement.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
@@ -1387,21 +1401,21 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <attribute name="LAST_DATE_TIME" x="140.97" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="154.305" y="5.08" size="2.54" layer="94"/>
 </instance>
-<instance part="K1" gate="K" x="12.7" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.161" y="107.3335" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="19.679" y="107.3335" size="1.778" layer="96" rot="R90"/>
+<instance part="K1" gate="K" x="22.86" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="20.321" y="38.7535" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="29.839" y="38.7535" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="K2" gate="K" x="25.4" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.861" y="107.3335" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="32.379" y="107.3335" size="1.778" layer="96" rot="R90"/>
+<instance part="K2" gate="K" x="35.56" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.021" y="38.7535" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="42.539" y="38.7535" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="K3" gate="K" x="38.1" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="35.561" y="107.3335" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="45.079" y="107.3335" size="1.778" layer="96" rot="R90"/>
+<instance part="K3" gate="K" x="48.26" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.721" y="38.7535" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="55.239" y="38.7535" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="K4" gate="K" x="50.8" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="48.261" y="107.3335" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="57.779" y="107.3335" size="1.778" layer="96" rot="R90"/>
+<instance part="K4" gate="K" x="60.96" y="40.64" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.421" y="38.7535" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="67.939" y="38.7535" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="JP1" gate="A" x="27.94" y="71.12" smashed="yes">
 <attribute name="NAME" x="21.59" y="79.375" size="1.778" layer="95"/>
@@ -1450,8 +1464,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="B_UP" class="0">
 <segment>
 <pinref part="K1" gate="K" pin="K1"/>
-<wire x1="12.7" y1="104.14" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
-<label x="12.7" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="22.86" y1="35.56" x2="22.86" y2="27.94" width="0.1524" layer="91"/>
+<label x="22.86" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="7"/>
@@ -1462,8 +1476,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="B_DOWN" class="0">
 <segment>
 <pinref part="K1" gate="K" pin="K2"/>
-<wire x1="15.24" y1="104.14" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
-<label x="15.24" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="25.4" y1="35.56" x2="25.4" y2="27.94" width="0.1524" layer="91"/>
+<label x="25.4" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="8"/>
@@ -1474,8 +1488,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="B_ENTER" class="0">
 <segment>
 <pinref part="K2" gate="K" pin="K1"/>
-<wire x1="25.4" y1="104.14" x2="25.4" y2="96.52" width="0.1524" layer="91"/>
-<label x="25.4" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="35.56" y1="35.56" x2="35.56" y2="27.94" width="0.1524" layer="91"/>
+<label x="35.56" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="9"/>
@@ -1486,8 +1500,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="B_BACKSPACE" class="0">
 <segment>
 <pinref part="K2" gate="K" pin="K2"/>
-<wire x1="27.94" y1="104.14" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
-<label x="27.94" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="38.1" y1="35.56" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
+<label x="38.1" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="10"/>
@@ -1498,8 +1512,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="S_OPEN" class="0">
 <segment>
 <pinref part="K3" gate="K" pin="K1"/>
-<wire x1="38.1" y1="104.14" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<label x="38.1" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="48.26" y1="35.56" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
+<label x="48.26" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="5"/>
@@ -1510,8 +1524,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="S_CLOSE" class="0">
 <segment>
 <pinref part="K3" gate="K" pin="K2"/>
-<wire x1="40.64" y1="104.14" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
-<label x="40.64" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="50.8" y1="35.56" x2="50.8" y2="27.94" width="0.1524" layer="91"/>
+<label x="50.8" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="6"/>
@@ -1522,8 +1536,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="MP1" class="0">
 <segment>
 <pinref part="K4" gate="K" pin="K1"/>
-<wire x1="50.8" y1="104.14" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
-<label x="50.8" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="60.96" y1="35.56" x2="60.96" y2="27.94" width="0.1524" layer="91"/>
+<label x="60.96" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="11"/>
@@ -1534,8 +1548,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <net name="MP2" class="0">
 <segment>
 <pinref part="K4" gate="K" pin="K2"/>
-<wire x1="53.34" y1="104.14" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<label x="53.34" y="96.52" size="0.8128" layer="95" rot="R270" xref="yes"/>
+<wire x1="63.5" y1="35.56" x2="63.5" y2="27.94" width="0.1524" layer="91"/>
+<label x="63.5" y="27.94" size="0.8128" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <pinref part="PANCON" gate="A" pin="12"/>
@@ -1763,6 +1777,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
