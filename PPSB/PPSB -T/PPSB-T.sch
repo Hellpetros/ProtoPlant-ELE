@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -890,6 +890,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="7.62" y="154.94" size="1.9304" layer="94">Created by Petr Stourac, sourced under CC BY-NC-SA v3.0 licence
 Distributed "AS IS" without warranty of any kind, espress or implied, 
 including but not limited to the warranties of merchantability or noninfringement.</text>
+<text x="87.63" y="20.32" size="2.54" layer="94">ver. 1 rev. 1</text>
 </plain>
 <instances>
 <instance part="DS18B20" gate="G$1" x="30.48" y="93.98" smashed="yes" rot="R90">

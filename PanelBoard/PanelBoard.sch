@@ -1394,6 +1394,7 @@ paja@paja-trb.cz
 <text x="7.62" y="109.22" size="1.9304" layer="94">Created by Petr Stourac, sourced under CC BY-NC-SA v3.0 licence
 Distributed "AS IS" without warranty of any kind, espress or implied, 
 including but not limited to the warranties of merchantability or noninfringement.</text>
+<text x="140.97" y="20.32" size="2.54" layer="94">ver. 1 rev. 0</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes">
